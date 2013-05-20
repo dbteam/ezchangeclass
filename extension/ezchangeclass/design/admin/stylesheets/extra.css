@@ -1,0 +1,13 @@
+input.button-important
+{
+    color: #fff;
+    background: #e43f08;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e4811d), to(#e43f08));
+    background-image: -moz-linear-gradient(top,  #e4811d,  #e43f08);
+    background-image: -ms-linear-gradient(top,  #e4811d,  #e43f08);
+    background-image: -o-linear-gradient(top,  #e4811d,  #e43f08);
+    background-image: linear-gradient(top,  #e4811d,  #e43f08);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-clip: padding-box;
+}
