@@ -177,14 +177,15 @@ if ( !$isQuiet )
 do
 {
 	$nodeArray = eZFunctionHandler::execute( 'content', 'list', array(
-																'parent_node_id' => $subTree,
-																'depth' => 99,
-																'limitation' => array(),
-																'offset' => 0,
-																'limit' => $limit,
-																'ignore_visibility' => true,
-																'class_filter_type' => 'include',
-																'class_filter_array' => array( $class_array[0] )
+                                                                'parent_node_id' => $subTree,
+                                                                'depth' => 99,
+                                                                'limitation' => array(),
+                                                                'offset' => 0,
+                                                                'limit' => $limit,
+                                                                'main_node_only' => true,
+                                                                'ignore_visibility' => true,
+                                                                'class_filter_type' => 'include',
+                                                                'class_filter_array' => array( $class_array[0] )
 															));
 
     if ( !$nodeArray ) {
